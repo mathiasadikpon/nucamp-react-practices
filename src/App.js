@@ -6,6 +6,7 @@ import UsingRef from "./uncontroled/UsingRef";
 import RandomColorRef from "./uncontroled/RandomColorRef";
 import ControlledForm from "./controled/MyControledForm";
 import ControlledLoginForm from "./controled/ControlledLoginForm";
+import SimpleForm from "./formiks/MyFormik";
 
 function App() {
   return (
@@ -29,6 +30,9 @@ function App() {
         <li class="list-group-item">
           <Link to="controlledloginform">Log In Form</Link>
         </li>
+        <li>
+          <Link to="formikform">Formik Form</Link>
+        </li>
       </ul>
 
       <Routes>
@@ -37,6 +41,7 @@ function App() {
         <Route path="random" element={<RandomColorRef />} />
         <Route path="inputform" element={<ControlledForm />} />
         <Route path="controlledloginform" element={<ControlledLoginForm />} />
+        <Route path="formikform" element={<SimpleForm />} />
       </Routes>
     </div>
   );

@@ -1,5 +1,5 @@
 import { useRef, useState } from "react";
-function UsingfRef() {
+function UsingRef() {
   const valueWithRef = useRef("not clicked yet");
   let valueWithoutRef = "not clicked yet";
 
@@ -21,4 +21,4 @@ function UsingfRef() {
   </div>;
 }
 
-export default UsingfRef;
+export default UsingRef;

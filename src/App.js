@@ -5,6 +5,7 @@ import { Route, Routes } from 'react-router-dom';
 import HomePage from './pages/HomePage';
 import UsingRef from './uncontroled/UsingRef';
 import RandomColorRef from './uncontroled/RandomColorRef';
+import ControlledForm from './controled/MyControledForm';
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
         <Route path="/" element={<HomePage/>}/>
         <Route path="ref" element={<UsingRef/>}/>
         <Route path="random" element={<RandomColorRef/>}/>
+        <Route path="inputform" element = {<ControlledForm />}/>
       </Routes>
 
     </div>

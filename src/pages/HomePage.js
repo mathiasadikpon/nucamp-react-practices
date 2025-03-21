@@ -1,4 +1,4 @@
-import { useSpring } from "react-spring";
+import { useSpring, animated } from "react-spring";
 
 
 const HomePage = () =>{
@@ -7,7 +7,7 @@ const HomePage = () =>{
         to:{x:100},
         config:{duration: Infinity}
     })
-    return( <h3>Home Page</h3>)
+    return(<animated.div><h3>Home Page</h3></animated.div> )
 };
 
 export default HomePage;
